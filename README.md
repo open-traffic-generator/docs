@@ -1,4 +1,5 @@
 # SONiC Testbed with Keysight IxNetwork as Traffic Generator
+Refer the below document to know about Deployment of Keysight ixNetwork API Server Docker  
 https://github.com/Azure/sonic-mgmt/blob/master/docs/testbed/README.testbed.Overview.md
 
 # How to run pytest with SONiC Testbed with Keysight IxNetwork
@@ -18,7 +19,7 @@ Before going to the work flow please look into the [basic docker commands to cre
       - ManagementIp in keysight-testbed/ansible/files/snappi_sonic_devices.csv
       - DUT ansible password in keysight-testbed/ansible/group-vars/snappi-sonic/secrets.yml
 * Run the script dev-env.sh from the directory /var/johnar/docs/keysight-testbed, running this script
-  replaces the testbed files with keysight ixNetwork testbed
+  update the testbed files needed for the test to run with Keysight ixNetwork
   * cd /var/johnar/docs/keysight-testbed
   * sh ./dev-env.sh
 * Run the test

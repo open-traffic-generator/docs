@@ -21,9 +21,10 @@ Before going to the workflow please take a look at [basic docker commands to cre
   update the testbed files needed for the test to run with Keysight ixNetwork
   * cd /var/johnar/docs/keysight-testbed
   * sh ./dev-env.sh
-* Run the test
+* To Run a single test using pytest
   * cd ~/sonic-mgmt/tests/
   * Add environment variables
     * export ANSIBLE_CONFIG=../ansible
     * export ANSIBLE_LIBRARY=../ansible
   * py.test --inventory ../ansible/snappi-sonic --host-pattern sonic-s6100-dut --testbed vms-snappi-sonic --testbed_file ../ansible/testbed.csv --show-capture=stdout --log-cli-level info --showlocals -ra --allow_recover --skip_sanity --disable_loganalyzer snappi/test_snappi.py
+* For Batch runs and nightly tests etc.., please refer to https://github.com/Azure/sonic-mgmt/blob/master/docs/tests/pytest.run.md

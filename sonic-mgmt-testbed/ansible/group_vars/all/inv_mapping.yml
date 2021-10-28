@@ -1,0 +1,4 @@
+# Specify all public mappings below
+lab: lab_connection_graph.xml
+# snappi
+snappi-sonic: snappi_sonic_connection_graph.xml

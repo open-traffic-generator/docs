@@ -1,0 +1,26 @@
+<LabConnectionGraph>
+  <PhysicalNetworkGraphDeclaration>
+    <Devices>
+      <Device Hostname="snappi-sonic" HwSku="SNAPPI-tester" Type="DevSnappiChassis"/>
+      <Device Hostname="sonic-s6100-dut" HwSku="Arista-7060CX-32S-C32" Type="DevSonic"/>
+      <Device Hostname="snappi-sonic-api-serv" HwSku="SNAPPI-tester" Type="DevSnappiApiServ"/>
+    </Devices>
+    <DeviceInterfaceLinks>
+      <DeviceInterfaceLink BandWidth="100000" EndDevice="snappi-sonic" EndPort="Card4/Port1" StartDevice="sonic-s6100-dut" StartPort="Ethernet64"/>
+      <DeviceInterfaceLink BandWidth="100000" EndDevice="snappi-sonic" EndPort="Card4/Port2" StartDevice="sonic-s6100-dut" StartPort="Ethernet68"/>
+      <DeviceInterfaceLink BandWidth="100000" EndDevice="snappi-sonic" EndPort="Card4/Port3" StartDevice="sonic-s6100-dut" StartPort="Ethernet72"/>
+      <DeviceInterfaceLink BandWidth="100000" EndDevice="snappi-sonic" EndPort="Card4/Port4" StartDevice="sonic-s6100-dut" StartPort="Ethernet76"/>
+    </DeviceInterfaceLinks>
+  </PhysicalNetworkGraphDeclaration>
+  <DataPlaneGraph>
+    <DevicesL3Info Hostname="snappi-sonic">
+      <ManagementIPInterface Name="ManagementIp" Prefix="10.36.78.53/32"/>
+    </DevicesL3Info>
+    <DevicesL2Info Hostname="snappi-sonic">
+      <InterfaceVlan mode="Access" portname="Card4/Port1" vlanids="2"/>
+      <InterfaceVlan mode="Access" portname="Card4/Port2" vlanids="2"/>
+      <InterfaceVlan mode="Access" portname="Card4/Port3" vlanids="2"/>
+      <InterfaceVlan mode="Access" portname="Card4/Port4" vlanids="2"/>
+    </DevicesL2Info>
+  </DataPlaneGraph>
+</LabConnectionGraph>

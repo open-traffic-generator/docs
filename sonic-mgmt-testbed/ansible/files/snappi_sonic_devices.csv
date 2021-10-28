@@ -1,0 +1,5 @@
+Hostname,ManagementIp,HwSku,Type
+snappi-sonic,10.36.78.53/32,SNAPPI-tester,DevSnappiChassis
+sonic-s6100-dut,10.36.79.243/32,Arista-7060CX-32S-C32,DevSonic
+snappi-sonic-api-serv,10.36.78.96/32,SNAPPI-tester,DevSnappiApiServ
+

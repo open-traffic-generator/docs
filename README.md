@@ -2,9 +2,8 @@
 Refer the below document to know about Deployment of Keysight ixNetwork API Server Docker  
 https://github.com/Azure/sonic-mgmt/blob/master/docs/testbed/README.testbed.Overview.md
 
-# How to run pytest with SONiC Testbed with Keysight IxNetwork
-# Workflow
-Before going to the work flow please look into the [basic docker commands to create the sonic-mgmt environment](DockerCommands.md).
+# Workflow to run tests with SONiC Testbed with Keysight IxNetwork
+Before going to the workflow please take a look at [basic docker commands to create the sonic-mgmt environment](DockerCommands.md).
 ```sudo docker load -i docker-sonic-mgmt``` 
 
 * Load the sonic-mgmt docker image

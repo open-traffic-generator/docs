@@ -5,7 +5,7 @@ sonic-s6100-dut     ansible_host=10.36.79.243
 hwsku="Force10-S6100"
 iface_speed='40000'
 
-[snappi_chassis]
+[Server_6]
 snappi-sonic          ansible_host=10.36.78.53   os=snappi
 
 [sonic:children]
